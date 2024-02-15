@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.png">
+    <title>Advice Generator</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <h1 class="board-number"></h1>
+            <blockquote class="advice"><img src="./assets/img/loading.png" alt="loading"></blockquote>
+
+            <picture>
+                <source
+                  class="desktop"
+                  media="(min-width: 601px)"
+                  srcset="assets/img/pattern-divider-desktop.svg"
+                />
+                <source
+                  class="mobile"
+                  media="(max-width: 550px)"
+                  srcset="assets/img/pattern-divider-mobile.svg"
+                />
+                <img
+                  class="line"
+                  src="assets/img/pattern-divider-desktop.svg"
+                  alt="Icon divider"
+                />
+              </picture>
+
+              <button class="btn">
+                <img src="assets/img/icon-dice.svg" alt="Dice icon" />
+              </button>
+        </div>
+    </main>
+
+    <!-- Javascript link -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
